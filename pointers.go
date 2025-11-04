@@ -28,6 +28,13 @@ func main() {
 
 	testSlice := []int{1, 2, 3, 4, 5}
 	fmt.Println("old:", testSlice)
-	redefineMap(&testSlice, []int{2, 3, 4, 5}...)
+	redefineMap(
+		&testSlice,
+		2,
+		3,
+		4,
+		5,
+		6,
+	)
 	fmt.Println("new:", testSlice)
 }
